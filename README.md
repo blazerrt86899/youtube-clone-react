@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# YouTube Clone App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a YouTube clone app created using React and powered by the YouTube API from RapidAPI. You can use this app to search for YouTube videos and watch them within the application.
 
-## Available Scripts
+## Running Locally
 
-In the project directory, you can run:
+To run this application locally, follow these steps:
 
-### `npm start`
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/blazerrt86899/youtube-clone-react.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd your-repo
+   ```
+3. Install the dependencies using npm or yarn:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+4. Create a `.env` file in the root directory and add your RapidAPI YouTube API key:
+   ```bash
+   REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY
+   ```
+5. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+6. Open your browser and navigate to `http://localhost:3000` to view the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deploying to Netlify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To deploy this application to Netlify, you can follow these steps:
 
-### `npm test`
+1. Sign up for a free account on [Netlify](https://www.netlify.com/) if you haven't already.
+2. Install the Netlify CLI globally using npm:
+   ```bash
+   npm install -g netlify-cli
+   ```
+3. Navigate into your project directory:
+   ```bash
+   cd your-repo
+   ```
+4. Build your React app for production:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+5. Log in to Netlify using the CLI and follow the prompts to authorize the application:
+   ```bash
+   netlify login
+   ```
+6. Deploy your app to Netlify:
+   ```bash
+   netlify deploy --dir=build
+   ```
+7. Follow the prompts to set up the deployment options and confirm the deployment.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Your app should now be deployed to Netlify, and you will receive a URL where you can access it.
 
-### `npm run build`
+## Notes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Ensure you have Node.js and npm (or yarn) installed on your machine before running the application.
+- Make sure to replace `YOUR_API_KEY` with your actual RapidAPI YouTube API key in the `.env` file.
+- Remember to keep your API key secure and avoid sharing it publicly.
